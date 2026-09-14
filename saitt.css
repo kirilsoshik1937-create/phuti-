@@ -1,0 +1,47 @@
+/* --- Базовые сбросы и сетка (пример структуры классов Tilda) --- */
+.t-container { max-width: 960px; margin: 0 auto; }
+.t-row { display: flex; flex-wrap: wrap; margin-left: -15px; margin-right: -15px; }
+.t-col { box-sizing: border-box; padding-left: 15px; padding-right: 15px; }
+.t-col_6 { width: 50%; }
+.t-col_8 { width: 66.66%; }
+.t-col_10 { width: 83.33%; }
+.t-align_center { text-align: center; }
+.t-align_left { text-align: left; }
+.t-margin_auto { margin-left: auto; margin-right: auto; }
+
+/* --- Типографика (на основе ваших данных) --- */
+.t-title_xxl { font-size: 72px; line-height: 1.1; font-weight: 300; }
+.t-title_lg { font-size: 48px; font-weight: 500; }
+.t-title_md { font-size: 36px; }
+.t-text_sm { font-size: 16px; line-height: 1.6; color: #333; }
+.t-opacity_50 { opacity: 0.5; }
+
+/* --- Кнопки --- */
+.t-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fa8669;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.t-btn:hover { background-color: #ff7a5a; }
+
+/* --- Секция "О нас" (uc-adv_desc пример) --- */
+.uc-adv_desc { padding-top: 120px; padding-bottom: 90px; }
+.t050__uptitle { text-transform: uppercase; letter-spacing: 2px; color: #aaa; font-size: 14px; }
+.t-title_xxl { font-size: 72px; line-height: 1.1; margin-bottom: 20px; }
+.t-descr_xxl { font-size: 20px; line-height: 1.7; color: #555; max-width: 800px; margin: 0 auto; }
+
+/* --- Карусель отзывов (упрощенно) --- */
+.t-slds { position: relative; overflow: hidden; }
+.t-slds__item { display: none; }
+.t-slds__item_active { display: block; }
+.t-slds__arrow { 
+    position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; 
+    background: white; border: none; padding: 10px; border-radius: 50%;
+}
+.t-slds__bullet_wrapper { list-style: none; text-align: center; padding: 20px 0; }
+.t-slds__bullet { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #ccc; margin: 0 5px; cursor: pointer; }
+.t-slds__bullet_active { background: #000; }
